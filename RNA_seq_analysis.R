@@ -63,5 +63,5 @@ de_row_idxs = which(rownames(m_seqcounts_present) %in% diffexp_transcript_IDs)
 
 library(gplots)
 png(file.path(outputdir, "diff_exp_heatmap.png"))
-heatmap(m_seqcounts_present[de_row_idxs,], labCol=c("nSP1","nSP2","nSP3","SP1","SP2","SP3"), labRow=diffexp_transcript_symbols)
+heatmap(m_seqcounts_present[de_row_idxs,], labCol=colnames(m_seqcounts_present), labRow=diffexp_transcript_symbols)
 dev.off()
