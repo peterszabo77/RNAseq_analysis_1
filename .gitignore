@@ -1,0 +1,4 @@
+*.CEL.gz
+*.CEL
+steps.txt
+data/
